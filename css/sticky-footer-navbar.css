@@ -1,0 +1,52 @@
+/* Стили Sticky footer
+-------------------------------------------------- */
+
+html,
+body {
+  height: 100%;
+  /* Элементы html и body не могут включать отступы или границы. */
+}
+
+/* Оболочка контента страницы выталкивает вниз футер */
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* Отрицательный отступ футера задается с помощью этого значения высоты */
+  margin: 0 auto -60px;
+  /* Отступ снизу на высоту футера */
+  padding: 0 0 60px;
+}
+
+/* Установка фиксированной высоты для футера */
+#footer {
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+/* И напоследок применяются необходимые правки CSS */
+@media (max-width: 767px) {
+  #footer {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+
+
+/* Пользовательская страница стилей CSS
+-------------------------------------------------- */
+/* Не нужно для шаблона либо метода sticky footer. */
+
+#wrap > .container {
+  padding: 60px 15px 0;
+}
+.container .credit {
+  margin: 20px 0;
+}
+
+code {
+  font-size: 80%;
+}
