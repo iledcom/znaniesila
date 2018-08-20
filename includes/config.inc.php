@@ -5,6 +5,7 @@
 	DEFINE('BASE_URI', 'D:/OSPanel/domains/znaniesila/'); 
 	DEFINE('BASE_URL', 'znaniesila/');
   DEFINE('MYSQL', BASE_URI . 'mysql.inc.php');
+  DEFINE('PDFS_DIR', BASE_URI . 'pdfs/');
 
 	// Запуск сеанса
   session_start();
